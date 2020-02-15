@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    android:theme="@android:style/Theme.Light"
+    tools:context="views.MainActivity"
+    android:background="@color/my_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="12dp"
+        android:background="@drawable/rounded_corner"
+        android:textAlignment="gravity"
+        >
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_remove_red_eye_black_24dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginEnd="12dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/views_text"
+            tools:visibility="visible"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp" />
+        <TextView
+            android:id="@+id/views_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="visible"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/rounded_corner"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="12dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:textAlignment="gravity"
+            android:background="@drawable/rounded_corner"
+            >
+
+            <ImageView
+                android:id="@+id/imageViewLikers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_favorite_border_black_24dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:id="@+id/likers_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:text="@string/likers_text"
+                android:layout_marginRight="12dp"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:id="@+id/likers_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="#00FFFFFF"
+                android:text="" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/likers_recycle_view"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_corner"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_corner"
+
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:textAlignment="gravity">
+
+            <ImageView
+                android:id="@+id/imageViewCommentators"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_message_black_24dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:id="@+id/comentators_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comentators_text"
+                android:layout_marginRight="12dp"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:id="@+id/comentators_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/comentators_recycle_view"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_corner"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_corner"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="12dp"
+        android:textAlignment="gravity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageViewMentions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_person_outline_black_24dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:id="@+id/mentions_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mentions_text"
+
+                android:layout_marginRight="12dp"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:id="@+id/mentions_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/mentions_recycle_view"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_corner" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_corner"
+
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="12dp"
+        android:textAlignment="gravity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageViewReposts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_autorenew_black_24dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:id="@+id/reposts_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reposts_text"
+                android:layout_marginRight="12dp"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:id="@+id/reposts_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/reposts_recycle_view"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_corner" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_corner"
+
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="12dp"
+        android:textAlignment="gravity">
+
+        <ImageView
+            android:id="@+id/imageViewBookmarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_bookmark_border_black_24dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginEnd="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bookmarks_post_text"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp" />
+
+        <TextView
+            android:id="@+id/bookmarks_count_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+    </LinearLayout>
+
+</LinearLayout>

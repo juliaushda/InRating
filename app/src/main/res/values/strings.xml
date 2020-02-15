@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">InRating</string>
+    <string name="views_text">Просмотры</string>
+    <string name="likers_text">Лайки</string>
+    <string name="comentators_text">Комментаторы</string>
+    <string name="mentions_text">Отметки</string>
+    <string name="bookmarks_post_text">Закладки</string>
+    <string name="reposts_text">Репосты</string>
+    <string name="content_description">myImage</string>
+    <color name="yourcolor">#f06292</color>
+</resources>
